@@ -1,0 +1,63 @@
+
+:root {
+  --background-color: white;
+  --card-modal-color: linear-gradient(to right, #f6f6f6, rgb(234, 234, 234));
+  --text-color: rgb(135, 135, 135);
+  --big-div: linear-gradient(to right, #f8f9fa, rgb(237, 237, 237));
+  --little-div: linear-gradient(to right, white, rgb(245, 245, 245));
+  --shadow-color: 0, 0, 0;
+}
+
+[data-theme="dark"] {
+  --background-color: black;
+  --card-modal-color: linear-gradient(to right, #212121, rgb(85, 85, 85));
+  --text-color: white;
+  --big-div: linear-gradient(to right, #242424, rgb(85, 85, 85));
+  --little-div: linear-gradient(to right, rgb(26, 26, 26), rgb(62, 62, 62));
+  --shadow-color: 255, 255, 255;
+} 
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.big-div {
+  background-image: var(--big-div);
+  box-shadow: 0px 0px 10px rgba(var(--shadow-color), .5);
+}
+
+.little-div {
+  background-image: var(--little-div);
+  color: var(--text-color);
+  box-shadow: 0px 0px 10px rgba(var(--shadow-color), .5);
+}
+
+.card,
+.modal-content {
+  background-image: var(--card-modal-color);
+  color: var(--text-color);
+  box-shadow: 0px 0px 15px rgba(var(--shadow-color), .7);
+}
+
+.shadow-img {
+  box-shadow: 0px 0px 10px rgba(var(--shadow-color), .5);
+}
+
+.scale-effect {
+  transition: transform 300ms ease-in-out;
+}
+
+.scale-effect:hover {
+  transform: scale(1.2)
+}
+
+header {
+  background-color: #EC3A49;
+  color: white;
+  text-align: center;
+}
+header h1 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 900;
+}
