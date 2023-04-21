@@ -11,14 +11,14 @@ function Error() {
   }
 
   const errorImageStyle = {
-   width: "400px", // Establece el ancho de la imagen
+   width: "300px", // Establece el ancho de la imagen
    height: "auto", // Establece la altura de la imagen en función del ancho
-   maxWidth: "400px", // Establece el ancho máximo de la imagen
+   maxWidth: "300px", // Establece el ancho máximo de la imagen
    maxHeight: "auto", // Establece la altura máxima de la imagen en función del ancho máximo
    objectFit: "contain", // Ajusta la imagen al contenedor manteniendo su relación de aspecto
    margin: "0 auto",
    padding: "10px 0px 0px 0px",
-   borderRadius: "50px",
+   borderRadius: "150px",
    margin: "15px"
  };
 
@@ -31,7 +31,6 @@ function Error() {
             src="/img/homero no beer.jpg" 
             alt="Imagen de Homero sin Cerveza"
             style={errorImageStyle}
-            className="shadow-img" 
          />
          <Modal.Title>
             No existen Cervezas en nuestra base de datos con el amargor y la los grados de alcohol que especificaste.
